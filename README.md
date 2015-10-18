@@ -1,0 +1,1 @@
+Pythonda küçük uygulamalar
