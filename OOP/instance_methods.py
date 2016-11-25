@@ -37,7 +37,15 @@ class Karakter():
             temp += ">"+item+"\n"
         return temp
 
+    def KarakterBilgi(self):
+        temp = "Karakter Hakkında\n"
+        temp += "Nickname:"+self.Nickname+"\nSınıf:"+self.Sinif+"\nUlus:"+self.Ulus+"\n"
+        temp += self.GucListele()+self.EkipmanListele()
+        return temp
+
+
 Buyucu = Karakter("abdullah","demasya","buyucu","Asa","Ejder Nidası")
 
 print(Buyucu.GucListele())
 print(Buyucu.EkipmanListele())
+print(Buyucu.KarakterBilgi())
