@@ -25,8 +25,19 @@ class Karakter():
         self.Gucler.append(str(guc))
         self.Stat = "Güç eklendi."
 
+    def GucListele(self):
+        temp = "Güçler\n"
+        for guc in self.Gucler:
+            temp += ">"+guc+"\n"
+        return temp
+
+    def EkipmanListele(self):
+        temp = "Ekipmanlar\n"
+        for item in self.Ekipmanlar:
+            temp += ">"+item+"\n"
+        return temp
 
 Buyucu = Karakter("abdullah","demasya","buyucu","Asa","Ejder Nidası")
 
-print(Buyucu.Gucler)
-print(Buyucu.Ekipmanlar)
+print(Buyucu.GucListele())
+print(Buyucu.EkipmanListele())
