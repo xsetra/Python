@@ -10,8 +10,7 @@ def is_prime(number):
     Returns: <bool>
 
     """
-    if number <= 1:
-        return False
+
 
     for element in range(2, number):
         if number % element == 0:
