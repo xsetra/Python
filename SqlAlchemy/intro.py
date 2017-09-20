@@ -24,5 +24,5 @@ class Address(Base):
     person_id = Column(Integer, ForeignKey('people.id'))
     person = relationship(Person)
 
-engine = create_engine('sqlite:///:memory:')
+engine = create_engine('sqlite:///')
 Base.metadata.create_all(engine)
